@@ -67,7 +67,7 @@ input,select {
 }
 
 .card.owned {
-   opacity: 0.6; /* fades the box */
+   opacity: 0.7; /* fades the box */
   background-color: #333; /* slightly darker background */
 }
 
@@ -100,3 +100,4 @@ input,select {
   color:var(--neon);
   text-shadow:0 0 8px var(--neon);
 }
+
