@@ -67,9 +67,8 @@ input,select {
 }
 
 .card.owned {
-   opacity: 0.5; /* fades the box */
+   opacity: 0.6; /* fades the box */
   background-color: #333; /* slightly darker background */
-  pointer-events: none; /* optional: disable clicks if desired */
 }
 
 .Common { border:5px solid #717471; }
