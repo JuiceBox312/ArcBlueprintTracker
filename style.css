@@ -72,10 +72,11 @@ input,select {
   box-shadow:0 0 15px #22c55e;
 }
 
-.Common { border-left:5px solid #9ca3af; }
-.Rare { border-left:5px solid #3b82f6; }
-.Epic { border-left:5px solid #a855f7; }
-.Legendary { border-left:5px solid #f59e0b; }
+.Common { border-left:5px solid #717471; }
+.Uncommon { border-left:5px solid #41eb6a; }
+.Rare { border-left:5px solid #1ecbfc; }
+.Epic { border-left:5px solid #d8299b; }
+.Legendary { border-left:5px solid #fbc700; }
 
 .list div {
   background:#020617;
