@@ -67,9 +67,9 @@ input,select {
 }
 
 .card.owned {
-  background:linear-gradient(180deg,#022c22,#000);
-  border-color:#22c55e;
-  box-shadow:0 0 15px #22c55e;
+   opacity: 0.5; /* fades the box */
+  background-color: #333; /* slightly darker background */
+  pointer-events: none; /* optional: disable clicks if desired */
 }
 
 .Common { border:5px solid #717471; }
