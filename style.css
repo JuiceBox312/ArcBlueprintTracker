@@ -101,7 +101,6 @@ input,select {
 .card.owned {
   opacity: 0.5;           /* faded */
   background-color: #333;  /* darker background */
-  pointer-events: none;    /* optional: disable click */
 }
 
 /* Rarity borders */
@@ -135,3 +134,4 @@ input,select {
   color:var(--neon);
   text-shadow:0 0 8px var(--neon);
 }
+
