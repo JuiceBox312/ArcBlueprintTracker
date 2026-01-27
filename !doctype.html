@@ -9,7 +9,9 @@ nav{display:flex;gap:20px;padding:15px;background:#0b1020}
 nav a{color:#7df9ff;text-decoration:none;font-weight:bold}
 .page{display:none;padding:20px}
 .active{display:block}
-.card{border:1px solid #222;padding:10px;margin:8px;border-radius:8px}
+.card{border:1px solid #222;padding:10px;margin:8px;border-radius:8px;position:relative}
+.tooltip{display:none;position:absolute;left:0;top:100%;background:#0b1020;border:1px solid #2a2f55;padding:10px;border-radius:8px;z-index:10;width:260px}
+.card:hover .tooltip{display:block}
 .legendary{color:gold}
 .epic{color:#ff4fd8}
 .rare{color:#4fa3ff}
@@ -41,7 +43,7 @@ blueprints.forEach(bp=>{
  c.append(chk,t);tracker.appendChild(c);
 
  const l=document.createElement('div');l.className=`card ${bp.rarity.toLowerCase()}`;
- l.innerHTML=`<b>${bp.name}</b><br>Maps: ${bp.maps.join(', ')}<br>${bp.description}`;
+ l.innerHTML=`<b>${bp.name}</b><div class='tooltip'><b>Maps:</b> ${bp.maps.join(', ')}<br>${bp.description}</div>`;
  locations.appendChild(l);
 });
 </script>
