@@ -1,0 +1,48 @@
+.blueprints-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 across */
+  gap: 10px;
+  padding: 10px;
+}
+
+.blueprint-entry {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.blueprint-entry:hover {
+  transform: scale(1.05);
+  border-color: #0ff; /* neon highlight on hover */
+}
+
+.blueprint-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.blueprint-name {
+  display: block;
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.blueprint-description {
+  display: none; /* hidden by default */
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgba(0, 255, 255, 0.1); /* neon cyan highlight */
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #0ff;
+  text-align: left;
+}
