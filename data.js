@@ -1,37 +1,88 @@
 const blueprints = [
-  {
-    name:"Aphelion",
-    rarity:"Legendary",
-    type:"Weapon",
-    maps:["Blue Gate","Dam Battlegrounds"],
-    description:"Matriarch boss drop and ultra-rare weapon crates."
-  },
-  {
-    name:"Angled Grip II",
-    rarity:"Rare",
-    type:"Mod",
-    maps:["Dam Battlegrounds","Buried City"],
-    description:"Residential containers and supply lockers."
-  },
-  {
-    name:"Heavy Barrel",
-    rarity:"Epic",
-    type:"Mod",
-    maps:["Spaceport","Buried City"],
-    description:"Weapon crates near ARC spawns."
-  },
-  {
-    name:"Shock Mine",
-    rarity:"Rare",
-    type:"Utility",
-    maps:["Blue Gate","Spaceport"],
-    description:"Utility crates and event rewards."
-  },
-  {
-    name:"Med Injector Mk II",
-    rarity:"Epic",
-    type:"Consumable",
-    maps:["Dam Battlegrounds","Buried City","Spaceport"],
-    description:"Medical lockers and emergency zones."
-  }
+  // ===== WEAPONS =====
+  { name:"Bettina", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"High-tier weapon crates, locked rooms, and boss chests." },
+  { name:"Aphelion", rarity:"Legendary", type:"Weapon", maps:["Blue Gate","Dam Battlegrounds"], description:"Matriarch core drops and ultra-locked weapon rooms." },
+  { name:"HullCracker", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Weapon crates in high-loot zones." },
+  { name:"Bobcat", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Security rooms, elite ARC zones." },
+  { name:"Osprey", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Weapon lockers and event reward crates." },
+  { name:"Burletta", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Residential loot rooms and raider caches." },
+  { name:"Equalizer", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Locked weapon crates and boss areas." },
+  { name:"Venator", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"High-tier ARC patrol zones." },
+  { name:"Il Toro", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Weapon caches in underground routes." },
+  { name:"Jupiter", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Weapon lockers in industrial zones." },
+  { name:"Torrente", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Security checkpoints and vault rooms." },
+  { name:"Tempest", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Event reward crates and locked armories." },
+  { name:"Vulcano", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Elite containers in ARC hotspots." },
+  { name:"Wolfpack", rarity:"Legendary", type:"Weapon", maps:["All Maps"], description:"Ultra-rare weapon caches and boss events." },
+  { name:"Showstopper", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Shotgun crates in close-quarters zones." },
+  { name:"Deadline", rarity:"Legendary", type:"Weapon", maps:["All Maps"], description:"End-game loot chests and boss events." },
+
+  // ===== GRENADES / MINES =====
+  { name:"Seeker Grenade", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"Utility crates and raider caches." },
+  { name:"Blaze Grenade", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"Explosives lockers and event rewards." },
+  { name:"Lure Grenade", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"Utility containers and loot rooms." },
+  { name:"Tagging Grenade", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"Recon supply crates." },
+  { name:"Smoke Grenade", rarity:"Common", type:"Grenade", maps:["All Maps"], description:"General utility loot containers." },
+  { name:"Trailblazer Grenade", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"High-loot crates near ARC zones." },
+  { name:"Trigger Nade", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"Explosives lockers and industrial crates." },
+
+  { name:"Gas Mine", rarity:"Rare", type:"Mine", maps:["All Maps"], description:"Utility crates and underground caches." },
+  { name:"Puls Mine", rarity:"Rare", type:"Mine", maps:["All Maps"], description:"ARC patrol loot and tech crates." },
+  { name:"Jolt Mine", rarity:"Rare", type:"Mine", maps:["All Maps"], description:"Power stations and event chests." },
+  { name:"Explosive Mine", rarity:"Rare", type:"Mine", maps:["All Maps"], description:"Explosives lockers and raider caches." },
+
+  // ===== MODS =====
+  { name:"Angled Grip II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Weapon crates and residential lockers." },
+  { name:"Angled Grip III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"High-tier weapon rooms." },
+  { name:"Compensator II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Weapon crates and security lockers." },
+  { name:"Compensator III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Locked armories and event crates." },
+  { name:"Extended Barrel", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Weapon vaults and hangar lockers." },
+  { name:"Extended Light Mag II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Weapon crates and raider stashes." },
+  { name:"Extended Light Mag III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"High-tier loot rooms." },
+  { name:"Extended Medium Mag II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Weapon crates." },
+  { name:"Extended Medium Mag III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Elite containers." },
+  { name:"Extended Shotgun Mag II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Shotgun lockers and close-range zones." },
+  { name:"Extended Shotgun Mag III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"High-tier shotgun caches." },
+  { name:"Muzzle Brake II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Weapon lockers." },
+  { name:"Muzzle Brake III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Elite armories." },
+  { name:"Shotgun Choke II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Shotgun crates." },
+  { name:"Shotgun Choke III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"High-tier CQB zones." },
+  { name:"Shotgun Silencer", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Rare shotgun lockers." },
+  { name:"Silencer I", rarity:"Common", type:"Mod", maps:["All Maps"], description:"General weapon loot." },
+  { name:"Silencer II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Security lockers." },
+  { name:"Vertical Grip II", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Weapon crates." },
+  { name:"Vertical Grip III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"High-tier weapon rooms." },
+  { name:"Lightweight Stock", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Weapon lockers." },
+  { name:"Padded Stock", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Utility crates." },
+  { name:"Stable Stock I", rarity:"Common", type:"Mod", maps:["All Maps"], description:"General loot." },
+  { name:"Stable Stock III", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Elite weapon caches." },
+
+  // ===== CONSUMABLES & UTILITY =====
+  { name:"Vita Shot", rarity:"Common", type:"Consumable", maps:["All Maps"], description:"Medical lockers." },
+  { name:"Vita Spray", rarity:"Rare", type:"Consumable", maps:["All Maps"], description:"Emergency rooms and med crates." },
+  { name:"Defibrillator", rarity:"Epic", type:"Utility", maps:["All Maps"], description:"Medical vaults and event rewards." },
+  { name:"Snap Hook", rarity:"Rare", type:"Utility", maps:["All Maps"], description:"Utility lockers and traversal crates." },
+  { name:"Remote Raider Flare", rarity:"Rare", type:"Utility", maps:["All Maps"], description:"Recon caches." },
+  { name:"Barricade Kit", rarity:"Rare", type:"Utility", maps:["All Maps"], description:"Construction lockers." },
+
+  // ===== PERKS / KITS =====
+  { name:"Combat Mk.3 (Flanking)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"High-tier skill caches." },
+  { name:"Combat Mk.3 (Aggressive)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Elite loot rooms." },
+  { name:"Looting Mk.3 (Survivor)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Utility vaults." },
+  { name:"Looting Mk.3 (SafeKeeper)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Event reward crates." },
+  { name:"Tactical Mk.3 (Revival)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"High-risk zones." },
+  { name:"Tactical Mk.3 (Defensive)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Elite caches." },
+  { name:"Tactical Mk.3 (Healing)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Medical vaults." },
+
+  // ===== PARTS & MISC =====
+  { name:"Light Gun Parts", rarity:"Common", type:"Parts", maps:["All Maps"], description:"Weapon salvage crates." },
+  { name:"Medium Gun Parts", rarity:"Common", type:"Parts", maps:["All Maps"], description:"Industrial loot containers." },
+  { name:"Heavy Gun Parts", rarity:"Rare", type:"Parts", maps:["All Maps"], description:"ARC drop zones." },
+  { name:"Complex Gun Parts", rarity:"Epic", type:"Parts", maps:["All Maps"], description:"Elite weapon caches." },
+
+  { name:"Blue Light Stick", rarity:"Common", type:"Utility", maps:["All Maps"], description:"General loot crates." },
+  { name:"Green Light Stick", rarity:"Common", type:"Utility", maps:["All Maps"], description:"Utility crates." },
+  { name:"Red Light Stick", rarity:"Common", type:"Utility", maps:["All Maps"], description:"General loot." },
+  { name:"Yellow Light Stick", rarity:"Common", type:"Utility", maps:["All Maps"], description:"Utility loot." },
+  { name:"Fire Works Box", rarity:"Rare", type:"Utility", maps:["All Maps"], description:"Event reward containers." }
 ];
