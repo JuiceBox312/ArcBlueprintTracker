@@ -51,15 +51,27 @@ input,select {
 }
 
 .card {
-  background:linear-gradient(180deg,#020617,#000);
-  border:1px solid var(--neon);
-  border-radius:10px;
-  padding:12px;
-  display:flex;
-  justify-content:space-between;
-  box-shadow:0 0 10px #000;
-  transition:.2s;
+  width: 120px;   /* fixed card width */
+  height: 180px;  /* fixed card height */
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  margin: 5px;
+  background: #111;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
 }
+
+.card-img {
+  width: 100%;      /* Make it fit the card width */
+  height: 100px;    /* Or whatever height you want */
+  object-fit: contain; /* Keeps aspect ratio and avoids stretching */
+  display: block;
+  margin: 0 auto;
+}
+
 
 .card:hover {
   box-shadow:0 0 18px var(--neon);
@@ -100,4 +112,5 @@ input,select {
   color:var(--neon);
   text-shadow:0 0 8px var(--neon);
 }
+
 
