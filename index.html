@@ -1,133 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Arc Raiders Blueprint Tracker</title>
-  <style>
-    /* Dark neon theme */
-    body {
-      background-color: #0b0b0f;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
-
-    h1 {
-      text-align: center;
-      color: #00ffff;
-      margin-top: 20px;
-    }
-
-    /* Grid container */
-    .blueprint-grid {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr); /* 10 across */
-      gap: 10px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    /* Individual blueprint box */
-    .blueprint-item {
-      position: relative;
-      background: #1a1a1a;
-      border-radius: 8px;
-      text-align: center;
-      padding: 5px;
-      cursor: pointer;
-      transition: transform 0.2s;
-      border: 2px solid #555; /* default border */
-    }
-
-    .blueprint-item:hover {
-      transform: scale(1.05);
-    }
-
-    /* Blueprint image */
-    .blueprint-image {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      margin-bottom: 5px;
-    }
-
-    .blueprint-name {
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    /* Hover description tooltip */
-    .tooltip {
-      visibility: hidden;
-      background-color: #111;
-      color: #0ff;
-      text-align: left;
-      padding: 5px;
-      border-radius: 5px;
-      position: absolute;
-      top: -5px;
-      left: 105%;
-      width: 250px;
-      z-index: 10;
-      font-size: 12px;
-      border: 1px solid #0ff;
-    }
-
-    .blueprint-item:hover .tooltip {
-      visibility: visible;
-    }
-
-    /* Rarity border colors */
-    .Common { border-color: grey; }
-    .Uncommon { border-color: green; }
-    .Rare { border-color: blue; }
-    .Epic { border-color: pink; }
-    .Legendary { border-color: gold; }
-  </style>
+<meta charset="UTF-8">
+<title>ArcBlueprintTracker</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Arc Raiders Blueprint Tracker</h1>
 
-  <div class="blueprint-grid" id="blueprint-grid"></div>
+<header>
+  <h1>ArcBlueprintTracker</h1>
+  <nav>
+    <a href="index.html" class="active">Tracker</a>
+    <a href="locations.html">Locations</a>
+  </nav>
+</header>
 
-  <script>
-    // Your blueprints array
-    const blueprints = [
-      { name:"Bettina", image:"https://arcraiders.wiki/images/Bettina.png", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"High-tier weapon crates, breached rooms" },
-      { name:"Blue Light Stick", image:"https://arcraiders.wiki/images/Blue_Light_Stick.png", rarity:"Common", type:"Utility", maps:["All Maps"], description:"General loot crates." },
-      { name:"Aphelion", image:"https://arcraiders.wiki/images/Aphelion.png", rarity:"Legendary", type:"Weapon", maps:["Blue Gate","Dam Battlegrounds"], description:"Matriarch core drops and ultra-locked weapon rooms." },
-      { name:"Combat Mk.3 (Flanking)", image:"https://arcraiders.wiki/images/Combat_Mk._3_(Flanking).png", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"High-tier skill caches." },
-      { name:"Combat Mk.3 (Aggressive)", image:"https://arcraiders.wiki/images/Combat_Mk._3_(Aggressive).png", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Elite loot rooms." },
-      { name:"Complex Gun Parts", image:"https://arcraiders.wiki/images/Complex_Gun_Parts.png", rarity:"Epic", type:"Parts", maps:["All Maps"], description:"Elite weapon caches." },
-      { name:"Fire Works Box", image:"https://arcraiders.wiki/images/Fireworks_Box.png", rarity:"Rare", type:"Utility", maps:["All Maps"], description:"Event reward containers." }
-      // Add all other blueprints here similarly...
-    ];
+<main>
+  <h2>Blueprint Tracker</h2>
 
-    const grid = document.getElementById('blueprint-grid');
+  <div class="controls">
+    <input id="search" placeholder="Search blueprint...">
+    <select id="mapFilter"><option value="">All Maps</option></select>
+    <select id="typeFilter"><option value="">All Types</option></select>
+    <select id="rarityFilter"><option value="">All Rarities</option></select>
+  </div>
 
-    blueprints.forEach(bp => {
-      const item = document.createElement('div');
-      item.className = `blueprint-item ${bp.rarity}`;
+  <p id="progress"></p>
+  <div id="trackerGrid" class="grid"></div>
+</main>
 
-      const img = document.createElement('img');
-      img.src = bp.image;
-      img.alt = bp.name;
-      img.className = 'blueprint-image';
-      item.appendChild(img);
-
-      const name = document.createElement('div');
-      name.className = 'blueprint-name';
-      name.textContent = bp.name;
-      item.appendChild(name);
-
-      // Tooltip for description
-      const tooltip = document.createElement('div');
-      tooltip.className = 'tooltip';
-      tooltip.innerHTML = `<strong>Type:</strong> ${bp.type}<br><strong>Maps:</strong> ${bp.maps.join(', ')}<br>${bp.description}`;
-      item.appendChild(tooltip);
-
-      grid.appendChild(item);
-    });
-  </script>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
