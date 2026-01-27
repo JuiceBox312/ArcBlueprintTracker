@@ -17,7 +17,6 @@ const blueprints = [
   { name:"HullCracker", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Weapon crates in high-loot zones." },
   { name:"Anvil", rarity:"Uncommon", type:"Weapon", maps:["All Maps"], description:"High-tier weapon crates, locked rooms." },
 
-
   { name:"Barricade Kit", rarity:"Uncommon", type:"Utility", maps:["All Maps"], description:"Construction lockers." },
   { name:"Blaze Grenade", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"Explosives lockers and event rewards." },
   { name:"Bobcat", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Security rooms, elite ARC zones." },
@@ -79,3 +78,4 @@ const blueprints = [
   { name:"Yellow Light Stick", rarity:"Common", type:"Utility", maps:["All Maps"], description:"Utility loot." },
 
 ];
+
