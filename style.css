@@ -44,51 +44,74 @@ input,select {
   padding:6px;
 }
 
+/* Tracker grid */
 .grid {
   display:grid;
-  grid-template-columns: repeat(10, 1fr); /* now 10 across */
+  grid-template-columns: repeat(10, 1fr); /* 10 across */
   gap: 10px;
 }
 
+/* Blueprint cards */
 .card {
-  width: 120px;   /* fixed card width */
-  height: 180px;  /* fixed card height */
+  width: 120px;
+  height: 180px;
   text-align: center;
   padding: 5px;
   border: 2px solid #555;
   border-radius: 5px;
-  margin: 5px;
   background: #111;
   color: #fff;
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
-
-.card-img {
-  width: 100%;      /* Make it fit the card width */
-  height: 100px;    /* Or whatever height you want */
-  object-fit: contain; /* Keeps aspect ratio and avoids stretching */
-  display: block;
-  margin: 0 auto;
-}
-
 
 .card:hover {
   box-shadow:0 0 18px var(--neon);
   transform:translateY(-2px);
 }
 
-.card.owned {
-   opacity: 0.7; /* fades the box */
-  background-color: #333; /* slightly darker background */
+/* Image styling */
+.card-img {
+  width: 100%;
+  max-height: 100px;   /* max height for all images */
+  object-fit: contain;  /* preserve aspect ratio */
+  display: block;
+  margin-bottom: 5px;
 }
 
-.Common { border:5px solid #717471; }
-.Uncommon { border:5px solid #41eb6a; }
-.Rare { border:5px solid #1ecbfc; }
-.Epic { border:5px solid #d8299b; }
-.Legendary { border:5px solid #fbc700; }
+/* Card name text */
+.card-name {
+  font-size: 0.85rem;
+  text-align: center;
+  word-break: break-word;
+  margin-bottom: 5px;
+}
 
+/* Checkbox styling */
+.card input[type="checkbox"] {
+  transform: scale(1.1);
+  margin-top: auto;
+}
+
+/* Owned blueprint effect */
+.card.owned {
+  opacity: 0.5;           /* faded */
+  background-color: #333;  /* darker background */
+  pointer-events: none;    /* optional: disable click */
+}
+
+/* Rarity borders */
+.Common { border:4px solid #717471; }
+.Uncommon { border:4px solid #41eb6a; }
+.Rare { border:4px solid #1ecbfc; }
+.Epic { border:4px solid #d8299b; }
+.Legendary { border:4px solid #fbc700; }
+
+/* Locations tab list */
 .list div {
   background:#020617;
   border:1px solid var(--neon);
@@ -112,5 +135,3 @@ input,select {
   color:var(--neon);
   text-shadow:0 0 8px var(--neon);
 }
-
-
