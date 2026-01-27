@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ArcBlueprintTracker</title>
+<style>
+body{margin:0;font-family:Arial;background:#05070d;color:#fff}
+nav{display:flex;gap:20px;padding:15px;background:#0b1020}
+nav a{color:#7df9ff;text-decoration:none;font-weight:bold}
+.page{display:none;padding:20px}
+.active{display:block}
+.card{border:1px solid #222;padding:10px;margin:8px;border-radius:8px}
+.legendary{color:gold}
+.epic{color:#ff4fd8}
+.rare{color:#4fa3ff}
+.uncommon{color:#4fff7d}
+.common{color:#aaa}
+</style>
+</head>
+<body>
+<nav>
+<a href="#" onclick="show('tracker')">Tracker</a>
+<a href="#" onclick="show('locations')">Locations</a>
+</nav>
+
+<div id="tracker" class="page active"></div>
+<div id="locations" class="page"></div>
+
+<script src="data.js"></script>
+<script>
+function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');}
+
+const tracker=document.getElementById('tracker');
+const locations=document.getElementById('locations');
+
+blueprints.forEach(bp=>{
+ const c=document.createElement('div');
+ c.className=`card ${bp.rarity.toLowerCase()}`;
+ const chk=document.createElement('input');chk.type='checkbox';
+ const t=document.createElement('span');t.textContent=` ${bp.name} (${bp.type})`;
+ c.append(chk,t);tracker.appendChild(c);
+
+ const l=document.createElement('div');l.className=`card ${bp.rarity.toLowerCase()}`;
+ l.innerHTML=`<b>${bp.name}</b><br>Maps: ${bp.maps.join(', ')}<br>${bp.description}`;
+ locations.appendChild(l);
+});
+</script>
+</body>
+</html>
