@@ -1,5 +1,5 @@
 const blueprints = [
-  { name:"Bettina", image:"https://arcraiders.wiki/wiki/File:Bettina.png", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"High-tier weapon crates, breached rooms" },
+  { name:"Bettina", image:"https://arcraiders.wiki/w/images/a/ac/Bettina.png", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"High-tier weapon crates, breached rooms" },
   { name:"Blue Light Stick", image:"https://arcraiders.wiki/w/images/c/cc/Blue_Light_Stick.png", rarity:"Common", type:"Utility", maps:["All Maps"], description:"General loot crates." },
   { name:"Aphelion", image:"https://arcraiders.wiki/w/images/thumb/8/88/Aphelion.png/348px-Aphelion.png.webp", rarity:"Legendary", type:"Weapon", maps:["Blue Gate","Dam Battlegrounds"], description:"N/A" },
   { name:"Combat Mk.3 (Flanking)", image:"https://arcraiders.wiki/w/images/thumb/7/73/Combat_Mk._3_%28Flanking%29.png/348px-Combat_Mk._3_%28Flanking%29.png.webp", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"N/A" },
@@ -79,3 +79,4 @@ const blueprints = [
   { name:"Tactical Mk.3 (Healing)", image:"https://arcraiders.wiki/w/images/thumb/1/12/Tactical_Mk._3_%28Healing%29.png/348px-Tactical_Mk._3_%28Healing%29.png.webp", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Medical vaults." },
   { name:"Yellow Light Stick", image:"https://arcraiders.wiki/w/images/thumb/1/1f/Yellow_Light_Stick.png/120px-Yellow_Light_Stick.png.webp", rarity:"Common", type:"Utility", maps:["All Maps"], description:"Utility loot." }
 ];
+
