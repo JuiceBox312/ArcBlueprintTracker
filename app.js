@@ -26,7 +26,10 @@ function render() {
     const card=document.createElement("div");
     card.className=`card ${bp.rarity}`;
     if(owned[bp.name])card.classList.add("owned");
-    card.innerHTML=`<span>${bp.name}</span><input type="checkbox" ${owned[bp.name]?"checked":""}>`;
+    card.innerHTML = `
+  <img src="${bp.image}" class="card-img" alt="${bp.name}">
+  <div class="card-name">${bp.name}</div>
+  <input type="checkbox" ${owned[bp.name] ? "checked" : ""}>
 
     card.querySelector("input").onchange=e=>{
       owned[bp.name]=e.target.checked;
@@ -44,3 +47,4 @@ function render() {
 [search,mapFilter,typeFilter,rarityFilter].forEach(e=>e.addEventListener("input",render));
 populate();
 render();
+
