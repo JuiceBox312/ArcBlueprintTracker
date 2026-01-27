@@ -46,8 +46,8 @@ input,select {
 
 .grid {
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
-  gap:12px;
+  grid-template-columns: repeat(10, 1fr); /* now 10 across */
+  gap: 10px;
 }
 
 .card {
