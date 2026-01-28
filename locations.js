@@ -9,7 +9,9 @@ blueprints.forEach(bp => {
 
   item.onclick = () => {
     // close any other open details
-    document.querySelectorAll(".details-inline").forEach(d => d.remove());
+document.querySelectorAll(".item").forEach(i => i.classList.remove("active"));
+item.classList.add("active");
+
 
     // toggle behavior
     if (item.nextElementSibling?.classList.contains("details-inline")) {
@@ -30,3 +32,4 @@ blueprints.forEach(bp => {
 
   list.appendChild(item);
 });
+
