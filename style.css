@@ -130,6 +130,9 @@ input,select {
   box-shadow: 0 0 10px var(--neon);
 }
 
+.item.active {
+  box-shadow: 0 0 15px var(--neon);
+}
 
 .details {
   background:#020617;
@@ -146,5 +149,6 @@ input,select {
   color:var(--neon);
   text-shadow:0 0 8px var(--neon);
 }
+
 
 
