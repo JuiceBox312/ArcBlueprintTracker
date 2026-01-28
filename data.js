@@ -15,7 +15,8 @@ const blueprints = [
   { name:"Angled Grip III", image:"https://arcraiders.wiki/w/images/thumb/0/0f/Angled_Grip_III.png/348px-Angled_Grip_III.png.webp", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"High-tier weapon rooms." },
   { name:"HullCracker", image:"https://arcraiders.wiki/w/images/thumb/b/ba/Hullcracker-Level1.png/348px-Hullcracker-Level1.png.webp", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Weapon crates in high-loot zones. The Major's Footlocker - Quest" },
   { name:"Anvil", image:"https://arcraiders.wiki/w/images/thumb/0/00/Anvil-Level1.png/348px-Anvil-Level1.png.webp", rarity:"Uncommon", type:"Weapon", maps:["All Maps"], description:"High-tier weapon crates, locked rooms." },
-
+  { name:"Unknown Blueprint", image:"images/unknown.png", rarity:"Unknown", type:"?", maps:["?"], description:"Not discovered yet" },
+  { name:"Unknown Blueprint", image:"images/unknown.png", rarity:"Unknown", type:"?", maps:["?"], description:"Not discovered yet" },
   { name:"Barricade Kit", image:"https://arcraiders.wiki/w/images/thumb/c/cb/Barricade_Kit.png/348px-Barricade_Kit.png.webp", rarity:"Uncommon", type:"Utility", maps:["All Maps"], description:"Construction lockers." },
   { name:"Blaze Grenade", image:"https://arcraiders.wiki/w/images/thumb/2/24/Blaze_Grenade.png/348px-Blaze_Grenade.png.webp", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"Explosives lockers and event rewards." },
   { name:"Bobcat", image:"https://arcraiders.wiki/w/images/thumb/3/36/Bobcat-Level1.png/348px-Bobcat-Level1.png.webp", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Security rooms, elite ARC zones." },
@@ -24,7 +25,7 @@ const blueprints = [
   { name:"Compensator II", image:"https://arcraiders.wiki/w/images/thumb/0/0a/Compensator_II.png/348px-Compensator_II.png.webp", rarity:"Uncommon", type:"Mod", maps:["All Maps"], description:"Weapon crates and security lockers." },
   { name:"Compensator III", image:"https://arcraiders.wiki/w/images/thumb/a/af/Compensator_III.png/348px-Compensator_III.png.webp", rarity:"Rare", type:"Mod", maps:["All Maps"], description:"Locked armories and event crates." },
   { name:"Defibrillator", image:"https://arcraiders.wiki/w/images/thumb/5/5f/Defibrillator.png/348px-Defibrillator.png.webp", rarity:"Rare", type:"Utility", maps:["All Maps"], description:"Medical vaults and event rewards." },
-
+  { name:"Unknown Blueprint", image:"images/unknown.png", rarity:"Unknown", type:"?", maps:["?"], description:"Not discovered yet" },
   { name:"Equalizer", image:"https://arcraiders.wiki/w/images/thumb/9/96/Equalizer.png/348px-Equalizer.png.webp", rarity:"Legendary", type:"Weapon", maps:["All Maps"], description:"Locked weapon crates and boss areas. Only found during Harvester event." },
   { name:"Extended Barrel", image:"https://arcraiders.wiki/w/images/thumb/2/2f/Extended_Barrel.png/348px-Extended_Barrel.png.webp", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Weapon vaults and hangar lockers." },
   { name:"Extended Light Mag II", image:"https://arcraiders.wiki/w/images/thumb/c/cf/Extended_Light_Mag_II.png/348px-Extended_Light_Mag_II.png.webp", rarity:"Uncommon", type:"Mod", maps:["All Maps"], description:"Weapon crates and raider stashes." },
@@ -79,4 +80,5 @@ const blueprints = [
   { name:"Tactical Mk.3 (Healing)", image:"https://arcraiders.wiki/w/images/thumb/1/12/Tactical_Mk._3_%28Healing%29.png/348px-Tactical_Mk._3_%28Healing%29.png.webp", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Medical vaults." },
   { name:"Yellow Light Stick", image:"https://arcraiders.wiki/w/images/thumb/1/1f/Yellow_Light_Stick.png/120px-Yellow_Light_Stick.png.webp", rarity:"Common", type:"Utility", maps:["All Maps"], description:"Utility loot." }
 ];
+
 
