@@ -99,7 +99,7 @@ input,select {
 
 /* Owned blueprint effect */
 .card.owned {
-  opacity: 0.5;           /* faded */
+  opacity: 0.3;           /* faded */
   background-color: #333;  /* darker background */
 }
 
@@ -149,6 +149,7 @@ input,select {
   color:var(--neon);
   text-shadow:0 0 8px var(--neon);
 }
+
 
 
 
