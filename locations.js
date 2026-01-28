@@ -1,23 +1,24 @@
 const list = document.getElementById("blueprintList");
-
 list.innerHTML = "";
 
 blueprints.forEach(bp => {
+  // wrapper is the KEY
+  const wrapper = document.createElement("div");
+  wrapper.className = "bp-wrapper";
+
   const item = document.createElement("div");
   item.className = "item";
   item.innerHTML = `<strong>${bp.name}</strong> <span>(${bp.rarity})</span>`;
 
   item.onclick = () => {
-    // close any other open details
-document.querySelectorAll(".item").forEach(i => i.classList.remove("active"));
-item.classList.add("active");
+    // close all other open details
+    document.querySelectorAll(".details-inline").forEach(d => d.remove());
+    document.querySelectorAll(".item").forEach(i => i.classList.remove("active"));
 
+    // toggle off if already open
+    if (wrapper.querySelector(".details-inline")) return;
 
-    // toggle behavior
-    if (item.nextElementSibling?.classList.contains("details-inline")) {
-      item.nextElementSibling.remove();
-      return;
-    }
+    item.classList.add("active");
 
     const details = document.createElement("div");
     details.className = "details-inline";
@@ -27,9 +28,9 @@ item.classList.add("active");
       <p><b>Where to look:</b> ${bp.description}</p>
     `;
 
-    item.after(details);
+    wrapper.appendChild(details);
   };
 
-  list.appendChild(item);
+  wrapper.appendChild(item);
+  list.appendChild(wrapper);
 });
-
