@@ -111,13 +111,25 @@ input,select {
 .Legendary { border:4px solid #fbc700; }
 
 /* Locations tab list */
-.list div {
-  background:#020617;
-  border:1px solid var(--neon);
-  margin:5px 0;
-  padding:8px;
-  cursor:pointer;
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
 }
+
+.list .item {
+  padding: 10px;
+  border: 1px solid var(--neon);
+  cursor: pointer;
+  background: #020617;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease;
+}
+
+.list .item:hover {
+  box-shadow: 0 0 10px var(--neon);
+}
+
 
 .details {
   background:#020617;
@@ -134,4 +146,5 @@ input,select {
   color:var(--neon);
   text-shadow:0 0 8px var(--neon);
 }
+
 
