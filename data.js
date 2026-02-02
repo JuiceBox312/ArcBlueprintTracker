@@ -44,7 +44,7 @@ const blueprints = [
   { name:"Jupiter", image:"https://arcraiders.wiki/w/images/thumb/6/68/Jupiter.png/348px-Jupiter.png.webp", rarity:"Legendary", type:"Weapon", maps:["All Maps"], description:"Weapon lockers in industrial zones. Only found during Harvester event." },
   { name:"Light Gun Parts", image:"https://arcraiders.wiki/w/images/thumb/c/c9/Light_Gun_Parts.png/348px-Light_Gun_Parts.png.webp", rarity:"Rare", type:"Parts", maps:["All Maps"], description:"Weapon salvage crates." },
   { name:"Lightweight Stock", image:"https://arcraiders.wiki/w/images/thumb/c/cb/Lightweight_Stock.png/348px-Lightweight_Stock.png.webp", rarity:"Epic", type:"Mod", maps:["All Maps"], description:"Weapon lockers." },
-  { name:"Looting Mk.3 (SafeKeeper)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"N/A" },
+  { name:"Looting Mk.3 (SafeKeeper)", image:"https://arcraiders.wiki/w/images/thumb/c/c6/Looting_Mk._3_%28Safekeeper%29.png/348px-Looting_Mk._3_%28Safekeeper%29.png.webp", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"N/A" },
 
   { name:"Lure Grenade", image:"https://arcraiders.wiki/w/images/thumb/7/77/Lure_Grenade.png/348px-Lure_Grenade.png.webp", rarity:"Uncommon", type:"Grenade", maps:["All Maps"], description:"Utility containers and loot rooms. Greasing Her Palms - Quest" },
   { name:"Medium Gun Parts", image:"https://arcraiders.wiki/w/images/thumb/9/9a/Medium_Gun_Parts.png/348px-Medium_Gun_Parts.png.webp", rarity:"Rare", type:"Parts", maps:["All Maps"], description:"Industrial loot containers." },
@@ -73,13 +73,14 @@ const blueprints = [
   { name:"Wolfpack", image:"https://arcraiders.wiki/w/images/thumb/2/24/Wolfpack.png/348px-Wolfpack.png.webp", rarity:"Epic", type:"Weapon", maps:["All Maps"], description:"Ultra-rare weapon caches and boss events." },
   { name:"Red Light Stick", image:"https://arcraiders.wiki/w/images/thumb/9/93/Red_Light_Stick.png/120px-Red_Light_Stick.png.webp", rarity:"Common", type:"Utility", maps:["All Maps"], description:"General loot." },
   { name:"Smoke Grenade", image:"https://arcraiders.wiki/w/images/thumb/d/d5/Smoke_Grenade.png/348px-Smoke_Grenade.png.webp", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"General utility loot containers." },
-  { name:"Tactical Mk.3 (Revival)", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"N/A" },
+  { name:"Tactical Mk.3 (Revival)", image:"https://arcraiders.wiki/w/images/thumb/e/e0/Tactical_Mk._3_%28Revival%29.png/348px-Tactical_Mk._3_%28Revival%29.png.webp", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"N/A" },
   { name:"Deadline", image:"https://arcraiders.wiki/w/images/thumb/c/c7/Deadline.png/348px-Deadline.png.webp", rarity:"Rare", type:"Weapon", maps:["All Maps"], description:"End-game loot chests and boss events." },
   { name:"Trailblazer Grenade", image:"https://arcraiders.wiki/w/images/thumb/8/89/Trailblazer.png/348px-Trailblazer.png.webp", rarity:"Rare", type:"Grenade", maps:["All Maps"], description:"High-loot crates near ARC zones." },
   { name:"Tactical Mk.3 (Defensive)", image:"https://arcraiders.wiki/w/images/thumb/a/a9/Tactical_Mk._3_%28Defensive%29.png/348px-Tactical_Mk._3_%28Defensive%29.png.webp", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Elite caches." },
   { name:"Tactical Mk.3 (Healing)", image:"https://arcraiders.wiki/w/images/thumb/1/12/Tactical_Mk._3_%28Healing%29.png/348px-Tactical_Mk._3_%28Healing%29.png.webp", rarity:"Epic", type:"Perk", maps:["All Maps"], description:"Medical vaults." },
   { name:"Yellow Light Stick", image:"https://arcraiders.wiki/w/images/thumb/1/1f/Yellow_Light_Stick.png/120px-Yellow_Light_Stick.png.webp", rarity:"Common", type:"Utility", maps:["All Maps"], description:"Utility loot." }
 ];
+
 
 
 
