@@ -18,12 +18,15 @@
 <main>
   <h2>Blueprint Tracker</h2>
 
-  <div class="controls">
-    <input id="search" placeholder="Search blueprint...">
-    <select id="mapFilter"><option value="">All Maps</option></select>
-    <select id="typeFilter"><option value="">All Types</option></select>
-    <select id="rarityFilter"><option value="">All Rarities</option></select>
-  </div>
+<div class="controls">
+  <input id="search" placeholder="Search blueprints...">
+  <select id="mapFilter"><option value="">All Maps</option></select>
+  <select id="typeFilter"><option value="">All Types</option></select>
+  <select id="rarityFilter"><option value="">All Rarity</option></select>
+
+  <button id="selectAll">Select All</button>
+  <button id="deselectAll">Deselect All</button>
+</div>
 
   <p id="progress"></p>
   <div id="trackerGrid" class="grid"></div>
@@ -33,3 +36,4 @@
 <script src="app.js"></script>
 </body>
 </html>
+
