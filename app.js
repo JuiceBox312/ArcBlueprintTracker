@@ -53,5 +53,25 @@ function render() {
 
 [search, mapFilter, typeFilter, rarityFilter].forEach(e => e.addEventListener("input", render));
 populate();
+
+selectAllBtn.onclick = () => {
+  blueprints.forEach(bp => {
+    owned[bp.name] = true;
+  });
+
+  localStorage.setItem("ownedBlueprints", JSON.stringify(owned));
+  render();
+};
+
+deselectAllBtn.onclick = () => {
+  blueprints.forEach(bp => {
+    owned[bp.name] = false;
+  });
+
+  localStorage.setItem("ownedBlueprints", JSON.stringify(owned));
+  render();
+};
+
 render();
+
 
