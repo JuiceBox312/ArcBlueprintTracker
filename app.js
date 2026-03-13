@@ -1,9 +1,12 @@
-const grid = document.getElementById("trackerGrid");
-const search = document.getElementById("search");
-const mapFilter = document.getElementById("mapFilter");
-const typeFilter = document.getElementById("typeFilter");
-const rarityFilter = document.getElementById("rarityFilter");
-const progress = document.getElementById("progress");
+const grid=document.getElementById("trackerGrid");
+const search=document.getElementById("search");
+const mapFilter=document.getElementById("mapFilter");
+const typeFilter=document.getElementById("typeFilter");
+const rarityFilter=document.getElementById("rarityFilter");
+const progress=document.getElementById("progress");
+
+const selectAllBtn = document.getElementById("selectAll");
+const deselectAllBtn = document.getElementById("deselectAll");
 
 let owned = JSON.parse(localStorage.getItem("ownedBlueprints")) || {};
 
@@ -51,3 +54,4 @@ function render() {
 [search, mapFilter, typeFilter, rarityFilter].forEach(e => e.addEventListener("input", render));
 populate();
 render();
+
